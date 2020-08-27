@@ -1,0 +1,26 @@
+ja:
+  views:
+    back: 戻る #全てのviewで共通してる
+    show: 本の詳細
+    new_book: 新規登録
+    editing_book: 編集
+  activerecord:
+    models:
+      book: ブック
+    attributes:
+      book:
+        title: タイトル
+        memo: メモ
+        author: 著者
+        picture: 画像
+  books: 
+      index:
+        title: 本棚
+        destroy: 削除
+      show:
+        title: 本の詳細
+        
+      new:
+        title: 新規登録
+      edit:
+        title: 編集
