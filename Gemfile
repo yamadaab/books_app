@@ -62,3 +62,5 @@ gem "rails-i18n"
 gem "kaminari"
 
 gem "devise"
+
+gem 'devise-i18n'
