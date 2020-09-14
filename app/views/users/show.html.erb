@@ -1,9 +1,8 @@
-<h1><%= users page %></h1>
+<h1><%= t ".title" %></h1>
+<p><%= User.human_attribute_name("name") %>：<%= @user.name %></p>
+<p><%= User.human_attribute_name("email") %>：<%= @user.email %></p>
+<p><%= User.human_attribute_name("postal_code") %>：<%= @user.postal_code %></p>
+<p><%= User.human_attribute_name("address") %>：<%= @user.address %></p>
+<p><%= User.human_attribute_name("introduction") %>：<%= @user.introduction %></p>
 
-<p>名前： <%= @user.name %></p>
-<p>メールアドレス : <%= @user.email %></p>
-<p>郵便番号 : <%= @user.postal_code %></p>
-<p>住所 : <%= @user.address %></p>
-<p>自己紹介 : <%= @user.introduction %></p>
-
-<%= link_to t("ログアウト"), destroy_user_session_path, method: :delete %>
+<%= render "users/shared/links_after_login" %>

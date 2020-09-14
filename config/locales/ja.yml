@@ -4,6 +4,7 @@ ja:
     show: 本の詳細
     new_book: 新規登録
     editing_book: 編集
+    logout: ログアウト
   activerecord:
     models:
       book: ブック
@@ -13,14 +14,25 @@ ja:
         memo: メモ
         author: 著者
         picture: 画像
+      user:
+        name: 名前
+        email: メールアドレス
+        postal_code: 郵便番号
+        address: 住所
+        introduction: 自己紹介
   books: 
-      index:
-        title: 本棚
-        destroy: 削除
-      show:
-        title: 本の詳細
-        
-      new:
-        title: 新規登録
-      edit:
-        title: 編集
+    index:
+      title: 本棚
+      destroy: 削除
+    show:
+      title: 本の詳細
+    new:
+      title: 新規登録
+    edit:
+      title: 編集
+  users:
+    shared:
+      links_after_login:
+        log_out: ログアウト
+    show:
+      title: マイページ
