@@ -1,0 +1,30 @@
+ja:
+  users:
+    registrations:
+      new:
+        title: アカウント登録
+        characters_minimum: 字以上でお願いします
+    sessions:
+      new:
+        title: ログイン
+    passwords:
+      new:
+        title: パスワードをお忘れですか？
+        reset: パスワード再設定用のメールを送信
+    shared:
+      links:
+        sign_up: アカウント登録
+        log_in: ログイン
+        log_out: ログアウト
+        forgot_your_password?: パスワードをお忘れですか？
+  attributes:
+    user:
+      current_password: "現在のパスワード"
+      name: 名前
+      email: "メールアドレス"
+      password: "パスワード"
+      password_confirmation: "確認用パスワード"
+      remember_me: "次回から自動的にログイン"
+      postal_code: "郵便番号"
+      address: "住所"
+      introduction: "自己紹介" 
