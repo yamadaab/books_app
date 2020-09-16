@@ -1,0 +1,4 @@
+<% if user_signed_in? %>
+  <%= link_to t("views.user_edit"), edit_user_registration_path %>
+  <%= link_to t("views.logout"), destroy_user_session_path, method: :delete %>
+<% end %>

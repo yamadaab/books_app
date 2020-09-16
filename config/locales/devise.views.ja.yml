@@ -4,6 +4,14 @@ ja:
       new:
         title: アカウント登録
         characters_minimum: 字以上でお願いします
+      edit:
+        title: ユーザー情報の編集
+        leave blank if you don't want to change it: 変更しない場合は空欄のままにしてください。
+        characters minimum: 字以上でお願いします
+        we need your current password to confirm your changes: 変更を確認するには現在のパスワードが必要です
+        update: 更新
+        unhappy?: 本当によろしいですか？
+        cancel my account: アカウント削除
     sessions:
       new:
         title: ログイン

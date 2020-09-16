@@ -5,6 +5,7 @@ ja:
     new_book: 新規登録
     editing_book: 編集
     logout: ログアウト
+    user_edit: ユーザーの編集
   activerecord:
     models:
       book: ブック
