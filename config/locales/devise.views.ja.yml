@@ -25,6 +25,7 @@ ja:
         log_in: ログイン
         log_out: ログアウト
         forgot_your_password?: パスワードをお忘れですか？
+        sign in with: でログイン
   attributes:
     user:
       current_password: "現在のパスワード"
