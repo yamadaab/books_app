@@ -4,5 +4,5 @@
 <p><%= User.human_attribute_name("postal_code") %>：<%= @user.postal_code %></p>
 <p><%= User.human_attribute_name("address") %>：<%= @user.address %></p>
 <p><%= User.human_attribute_name("introduction") %>：<%= @user.introduction %></p>
-
+<p><%= image_tag @user.avatar %></p>
 <%= render "layouts/links_after_login" %>
