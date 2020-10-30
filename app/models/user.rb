@@ -12,7 +12,6 @@ class User < ApplicationRecord
       user.name = auth.info.name
       user.email = User.dummy_email(auth)
       user.password = Devise.friendly_token[0, 20]
-
       # user.skip_confirmation!
     end
   end
