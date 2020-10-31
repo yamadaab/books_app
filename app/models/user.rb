@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class User < ApplicationRecord
+  has_one_attached :avatar
+  
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
          :omniauthable, omniauth_providers: %i[github]
@@ -10,7 +12,6 @@ class User < ApplicationRecord
       user.name = auth.info.name
       user.email = User.dummy_email(auth)
       user.password = Devise.friendly_token[0, 20]
-
       # user.skip_confirmation!
     end
   end
