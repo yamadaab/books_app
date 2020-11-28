@@ -6,6 +6,10 @@ ja:
     editing_book: 編集
     logout: ログアウト
     user_edit: ユーザーの編集
+    user_index: ユーザー一覧
+    user_show: ユーザーの詳細
+    user_follow: フォロー
+    user_unfollow: フォロー解除
   activerecord:
     models:
       book: ブック
@@ -38,3 +42,5 @@ ja:
         log_out: ログアウト
     show:
       title: マイページ
+    index:
+      title: ユーザー一覧
