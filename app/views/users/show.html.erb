@@ -15,5 +15,8 @@
 <% end %>
 <br>
 
+<%= link_to t(".user_followings_index"), user_followings_path(@user) %>
+<%= link_to t(".user_followers_index"), user_followers_path(@user) %>
+<br>
 <%= render "layouts/links_after_login" %>
 

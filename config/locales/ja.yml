@@ -42,5 +42,13 @@ ja:
         log_out: ログアウト
     show:
       title: マイページ
+      user_followings_index: フォロー一覧
+      user_followers_index: フォロワー一覧
     index:
       title: ユーザー一覧
+  followings:
+    index:
+      title: フォロー一覧
+  followers:
+    index:
+      title: フォロワー一覧
