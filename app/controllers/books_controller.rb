@@ -52,7 +52,6 @@ class BooksController < ApplicationController
   end
 
   private
-
     def set_book
       @book = Book.find(params[:id])
     end
