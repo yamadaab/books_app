@@ -1,0 +1,7 @@
+<h1><%= t ".title" %></h1>
+
+<% @followings.each do |user| %>
+  <%= user.name %>
+<% end %>
+<br>
+<%= render "layouts/links_after_login" %>

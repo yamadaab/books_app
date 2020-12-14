@@ -2,5 +2,5 @@
 
 require "test_helper"
 
-class BookTest < ActiveSupport::TestCase
+class FollowTest < ActiveSupport::TestCase
 end

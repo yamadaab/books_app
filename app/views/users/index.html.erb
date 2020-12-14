@@ -1,0 +1,15 @@
+<h1><%= t ".title" %></h1>
+<br>
+  <table>
+    <% @users.each do |user| %>
+      <tr>
+      <td><%= link_to user.name, user %></td>
+      </tr>
+    <% end %>
+    <%= paginate @users %>
+  </table>
+</br>
+
+<% if user_signed_in? %>
+  <%= link_to t("views.logout"), destroy_user_session_path, method: :delete %>
+<% end %>
