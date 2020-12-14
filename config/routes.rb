@@ -8,4 +8,5 @@ Rails.application.routes.draw do
     resources :followers, only: [:index]
   end
   resources :books
+  root "homes#top"
 end
