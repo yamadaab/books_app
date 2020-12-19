@@ -1,22 +1,24 @@
+<h1><%= t ".title" %></h1>
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
+  <strong><%= Report.human_attribute_name("title") %>:</strong>
   <%= @report.title %>
 </p>
 
 <p>
-  <strong>Memo:</strong>
+  <strong><%= Report.human_attribute_name("memo") %>:</strong>
+  <br>
   <%= @report.memo %>
 </p>
 
 <p>
-  <strong>User_name:</strong>
+  <strong><%= Report.human_attribute_name("user") %>:</strong>
   <%= @report.user.name %>
 </p>
 
 <%= render partial: "comments/comments", locals: {commentable: @report } %>
 <%= render partial: "comments/form", locals: {commentable: @report } %>
 
-<%= link_to 'Edit', edit_report_path(@report) %> |
-<%= link_to 'Back', reports_path %>
+<%= link_to t("views.edit"), edit_report_path(@report) %> |
+<%= link_to t("views.back"), reports_path %>
