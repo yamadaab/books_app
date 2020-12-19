@@ -7,6 +7,7 @@ class User < ApplicationRecord
   has_many :followings, through: :active_relationships, source: :target_user
   has_many :followers, through: :passive_relationships, source: :user
   has_many :reports
+  has_many :comments
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,

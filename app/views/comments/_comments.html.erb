@@ -1,0 +1,10 @@
+<h2>コメント</h2>
+
+<% commentable.comments.each do |comment| %>
+  <%= comment.body %>
+  投稿者：<%= comment.user.name%>
+  <% if current_user.id == comment.user.id %>
+  <td><%= link_to '削除', comment_path(comment.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <% end %>
+<br>
+<% end %>
