@@ -28,7 +28,7 @@ class ReportsController < ApplicationController
 
   def update
     if @report.update(report_params)
-      redirect_to @report, notice: "Report was successfully updated." 
+      redirect_to @report, notice: "Report was successfully updated."
     else
       render :edit
     end
