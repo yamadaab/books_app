@@ -21,7 +21,7 @@
         <td><%= book.author %></td>
         <td><%= book.picture %></td>
         <td><%= link_to t("views.show"), book %></td>
-        <td><%= link_to t("views.editing_book"), edit_book_path(book) %></td>
+        <td><%= link_to t("views.edit"), edit_book_path(book) %></td>
         <td><%= link_to t(".destroy"), book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
@@ -30,4 +30,4 @@
 </table>
 
 
-<%= link_to t("views.new_book"), new_book_path %>
+<%= link_to t("views.new"), new_book_path %>

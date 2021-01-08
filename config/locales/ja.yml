@@ -1,9 +1,9 @@
 ja:
   views:
     back: 戻る #全てのviewで共通してる
-    show: 本の詳細
-    new_book: 新規登録
-    editing_book: 編集
+    show: 詳細
+    new: 新規登録
+    edit: 編集
     logout: ログアウト
     user_edit: ユーザーの編集
     user_index: ユーザー一覧
@@ -26,6 +26,10 @@ ja:
         address: 住所
         introduction: 自己紹介
         avatar: "画像"
+      report:
+        title: タイトル
+        memo: 本日の学習内容
+        user: 報告者
   books: 
     index:
       title: 本棚
@@ -36,6 +40,22 @@ ja:
       title: 新規登録
     edit:
       title: 編集
+  reports: 
+    index:
+      title: 日報一覧
+      destroy: 削除
+    show:
+      title: 日報の詳細
+    new:
+      title: 新規登録
+    edit:
+      title: 編集
+  comments: 
+    comments:
+      title: コメント
+      destroy: 削除
+    form:
+      title: コメント投稿
   users:
     shared:
       links_after_login:
